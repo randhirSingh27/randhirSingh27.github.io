@@ -4,48 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randhir Singh's Portfolio</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with expertise in Java, MySQL, and React.js.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>Project 1</h3>
-                <img src="project1.jpg" alt="Project 1">
-                <p>Description of Project 1</p>
-                <div class="project-links">
-                    <a href="https://project1.live" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                    <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer">Source Code</a>
-                </div>
+    <!-- Use Bootstrap's navbar component -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Randhir Singh's Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Add more project items here -->
+        </div>
+    </nav>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with expertise in Java, MySQL, and React.js.</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: randhir.singh27mar@gmail.com</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/randhirsingh27" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://github.com/randhirSingh27" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <!-- Add more social media links as needed -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Project 1</h3>
+                            <p class="card-text">Description of Project 1</p>
+                            <div class="project-links">
+                                <a href="https://project1.live" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Live Demo</a>
+                                <a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project items here -->
+            </div>
         </div>
     </section>
 
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: randhir.singh27mar@gmail.com</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/randhirsingh27" target="_blank" rel="noopener noreferrer" class="btn btn-primary">LinkedIn</a>
+                <a href="https://github.com/randhirSingh27" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <!-- Add more social media links as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Bootstrap JavaScript (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
