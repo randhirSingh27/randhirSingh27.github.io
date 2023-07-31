@@ -22,19 +22,9 @@
         text-align: center;
 
         .brand-img {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            -weblit-transform: translate(-50%,-50%);
-            border: 10px solid white;
-            transition: .5s !important;
-            -weblit-transition: .5s !important;
-            z-index: 2;
-            box-shadow: 0 5px 1px rgba(128, 128, 128, 0.13);
-            width: 170px;
-            border-radius: 50%;
-        }
+            max-width: 100%;
+            height: auto;
+          }
 
         .brand-txt {
             position: relative;
@@ -67,8 +57,8 @@
         }
 
         .brand-img {
-            top: -10px;
-            opacity: 0;
-        }
+            max-width: 100%;
+            height: auto;
+          }
     }
 }
